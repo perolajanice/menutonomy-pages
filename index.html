@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menutonomy</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .vote-buttons i {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .vote-buttons span {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Menutonomy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="chicken-biryani.jpg" class="card-img-top" alt="Chicken Biryani">
+                    <div class="card-body">
+                        <h5 class="card-title" id="chicken-biryani">Chicken Biryani</h5>
+                        <p class="card-text">Delicious Chicken Biryani with aromatic spices and tender chicken pieces.</p>
+                        <p><strong>Harrys</strong></p>
+                        <div class="vote-buttons">
+                            <i class="fas fa-thumbs-up" onclick="vote('chickenBiryaniHarrysUp')"></i><span id="chickenBiryaniHarrysUp">0</span>
+                            <i class="fas fa-thumbs-down" onclick="vote('chickenBiryaniHarrysDown')"></i><span id="chickenBiryaniHarrysDown">0</span>
+                        </div>
+                        <p><strong>Nandos</strong></p>
+                        <div class="vote-buttons">
+                            <i class="fas fa-thumbs-up" onclick="vote('chickenBiryaniNandosUp')"></i><span id="chickenBiryaniNandosUp">0</span>
+                            <i class="fas fa-thumbs-down" onclick="vote('chickenBiryaniNandosDown')"></i><span id="chickenBiryaniNandosDown">0</span>
+                        </div>
+                        <p><strong>Novikov</strong></p>
+                        <div class="vote-buttons">
+                            <i class="fas fa-thumbs-up" onclick="vote('chickenBiryaniNovikovUp')"></i><span id="chickenBiryaniNovikovUp">0</span>
+                            <i class="fas fa-thumbs-down" onclick="vote('chickenBiryaniNovikovDown')"></i><span id="chickenBiryaniNovikovDown">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="matcha.jpg" class="card-img-top" alt="Matcha">
+                    <div class="card-body">
+                        <h5 class="card-title" id="matcha">Matcha</h5>
+                        <p class="card-text">Refreshing and healthy Matcha tea made with oat milk and caramel syrup.</p>
+                        <p><strong>Harrys</strong></p>
+                        <div class="vote-buttons">
+                            <i class="fas fa-thumbs-up" onclick="vote('matchaHarrysUp')"></i><span id="matchaHarrysUp">0</span>
+                            <i class="fas fa-thumbs-down" onclick="vote('matchaHarrysDown')"></i><span id="matchaHarrysDown">0</span>
+                        </div>
+                        <p><strong>Nandos</strong></p>
+                        <div class="vote-buttons">
+                            <i class="fas fa-thumbs-up" onclick="vote('matchaNandosUp')"></i><span id="matchaNandosUp">0</span>
+                            <i class="fas fa-thumbs-down" onclick="vote('matchaNandosDown')"></i><span id="matchaNandosDown">0</span>
+                        </div>
+                        <p><strong>Novikov</strong></p>
+                        <div class="vote-buttons">
+                            <i class="fas fa-thumbs-up" onclick="vote('matchaNovikovUp')"></i><span id="matchaNovikovUp">0</span>
+                            <i class="fas fa-thumbs-down" onclick="vote('matchaNovikovDown')"></i><span id="matchaNovikovDown">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="seafood-pasta.jpg" class="card-img-top" alt="Seafood Pasta">
+                    <div class="card-body">
+                        <h5 class="card-title" id="seafood-pasta">Seafood Pasta</h5>
+                        <p class="card-text">Tasty Seafood Pasta with a mix of fresh seafood and a savory sauce.</p>
+                        <p><strong>Harrys</strong></p>
+                        <div class="vote-buttons">
+                            <i class="fas fa-thumbs-up" onclick="vote('seafoodPastaHarrysUp')"></i><span id="seafoodPastaHarrysUp">0</span>
+                            <i class="fas fa-thumbs-down" onclick="vote('seafoodPastaHarrysDown')"></i><span id="seafoodPastaHarrysDown">0</span>
+                        </div>
+                        <p><strong>Nandos</strong></p>
+                        <div class="vote-buttons">
+                            <i class="fas fa-thumbs-up" onclick="vote('seafoodPastaNandosUp')"></i><span id="seafoodPastaNandosUp">0</span>
+                            <i class="fas fa-thumbs-down" onclick="vote('seafoodPastaNandosDown')"></i><span id="seafoodPastaNandosDown">0</span>
+                        </div>
+                        <p><strong>Novikov</strong></p>
+                        <div class="vote-buttons">
+                            <i class="fas fa-thumbs-up" onclick="vote('seafoodPastaNovikovUp')"></i><span id="seafoodPastaNovikovUp">0</span>
+                            <i class="fas fa-thumbs-down" onclick="vote('seafoodPastaNovikovDown')"></i><span id="seafoodPastaNovikovDown">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function vote(voteId) {
+            var voteElement = document.getElementById(voteId);
+            var votes = parseInt(voteElement.innerText);
+            votes++;
+            voteElement.innerText = votes;
+        }
+    </script>
+</body>
+</html>
